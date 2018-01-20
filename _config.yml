@@ -1,0 +1,11 @@
+lsi: false
+permalink: /:title
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+  hard_wrap: false
+  syntax_highlighter_opts:
+    disable: true
+gems:
+  - jekyll-redirect-from

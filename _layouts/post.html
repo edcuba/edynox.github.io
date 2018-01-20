@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<div class="content{% if page.photo_url %} photo-post{% endif %}">
+  <div class="post single">
+    {% unless page.title_hidden %}
+    <h1>{{ page.title }}</h1>
+    <info datetime="{{ page.date | date: "%Y-%m-%d" }}">
+      {{ page.date | date: "%b %e, %Y" }}
+    </info>
+    {% endunless %}
+    <div class="body">{% if page.external_url %}Article is published at {{ page.external_url }}<script>
+    document.location.href = "{{ page.external_url }}";
+    </script>{% else %}{{ content }}{% endif %}</div>
+    <div class="breaker"></div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+- name:  DNF SWDB
+  url:   https://github.com/edynox/dnf
+  descr: Unified software database integration into DNF Package Manager
+  
+- name:  dnf-swdb library
+  url:   https://github.com/edynox/libdnf
+  descr: Unified software database API
+
+- name:  DNF CI Tests
+  url:   https://github.com/edynox/ci-dnf-stack
+  descr: Continuous Integration tests for integration of SWDB into DNF
+  
+- name:  Simple Interpreter
+  url:   https://github.com/edynox/IFJ
+  descr: Simple Java like interpreter written in C

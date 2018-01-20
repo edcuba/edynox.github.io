@@ -1,0 +1,16 @@
+---
+layout: dirindex
+fb_comments: 3
+title: Projects
+---
+
+<style type="text/css">
+
+ul > li > p { margin:0; display:inline; }
+
+</style>
+<ul class="minimal">
+{% for project in site.data.projects %}
+<li><a href="{{ project.url }}">{{ project.name }}</a> — {{ project.descr | markdownify }}</li>
+{% endfor %}
+</ul>
