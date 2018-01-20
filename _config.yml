@@ -1,11 +1,35 @@
-lsi: false
-permalink: /:title
+title: Hello, I'm Eduard Čuba
+description: >
+  Soon...
+permalink: ':title/'
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+site-twitter: #if your site has a twitter account, enter it here
+
+# Author Settings
+author: Eduard Čuba
+author-img: avatar.png
+about-author: Soon...
+twitter: Edynox_sk # add your Twitter handle
+facebook: cuba.eduard # add your Facebook handle
+github: edynox # add your Github handle
+linkedin: eduard-čuba-2653b1143 # add your Linkedin handle
+email: cuba.edo@gmail.com # add your Email address
+
+# Disqus
+discus-identifier: # add your discus identifier
+
+# Tracker
+analytics: # Google Analytics
+
+# Build Settings
 markdown: kramdown
-kramdown:
-  input: GFM
-  auto_ids: true
-  hard_wrap: false
-  syntax_highlighter_opts:
-    disable: true
-gems:
-  - jekyll-redirect-from
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jemoji
+
+paginate: 8
+paginate_path: "/page/:num"
+
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
