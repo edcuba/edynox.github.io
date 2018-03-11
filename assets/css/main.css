@@ -1319,6 +1319,32 @@ a.newer-posts:hover {
   background-color: #ecf0f1;
 }
 
+.categories {
+  margin: 0;
+  padding: 10px;
+}
+
+.categories li {
+  margin: 5px;
+  list-style: none;
+}
+
+.categories li a {
+  text-decoration: none;
+  color: #263959;
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #ecf0f1;
+  background-color: #fafafa;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.categories li a:hover {
+  background-color: #ecf0f1;
+}
+
 .tag-list span a {
   text-decoration: none;
   color: #263959;

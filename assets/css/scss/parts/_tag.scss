@@ -36,6 +36,27 @@
   }
 }
 
+.categories {
+  margin: 0;
+  padding: 10px;
+  li {
+    margin: 5px;
+    list-style: none;
+    a {
+      text-decoration: none;
+      color: $dark-blue;
+      display: inline-block;
+      padding: 5px 10px;
+      border: 1px solid $gray;
+      background-color: $lightgray;
+      transition: all .3s;
+      &:hover {
+        background-color: $gray;
+      }
+    }
+  }
+}
+
 .tag-list {
   span {
     a {

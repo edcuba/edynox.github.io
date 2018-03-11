@@ -8,9 +8,25 @@ layout: default
       <div class="cover-author-image">
         <a href="{{site.baseurl}}/"><img src="{{site.baseurl}}/assets/img/{% if site.author-img %}{{site.author-img}}{% endif %}" alt="{{site.author}}"></a>
       </div>
-      <div class="author-name">{{site.author}}</div>
+      <a href="/about-me/" style="text-decoration: none;">
+          <div class="author-name">{{site.author}}</div>
+      </a>
       <p>{{site.about-author}}</p>
     </div>
+
+    {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+    {% assign tag_words = site_tags | split:',' | sort %}
+
+    <div>
+      <h2>Tags</h1>
+      <ul class="categories">
+      {% for item in (0..site.tags.size) %}{% unless forloop.last %}
+        {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
+        <li ><a href="/tag/{{ this_word | cgi_escape }}" class="tag">{{ this_word }} <span>({{ site.tags[this_word].size }})</span></a></li>
+      {% endunless %}{% endfor %}
+      </ul>
+  </div>
+
   </header> <!-- End Header -->
   <footer>
     <section class="contact">
