@@ -1326,6 +1326,7 @@ a.newer-posts:hover {
 
 .categories li {
   margin: 5px;
+  display: inline-block;
   list-style: none;
 }
 

@@ -1,7 +1,5 @@
 title: Eduard Čuba - blog
-description: >
-  Computer science Bachelor student at Brno University of Technology
-  Software engineer
+description:
 permalink: ':title/'
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
@@ -10,7 +8,9 @@ site-twitter: #if your site has a twitter account, enter it here
 # Author Settings
 author: Eduard Čuba
 author-img: avatar.png
-about-author: Soon...
+about-author: >
+  Software engineer and
+  computer science student at Brno University of Technology
 twitter: Edynox_sk # add your Twitter handle
 facebook: cuba.eduard # add your Facebook handle
 github: edynox # add your Github handle
